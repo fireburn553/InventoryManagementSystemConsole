@@ -12,3 +12,4 @@ D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0
 D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\InventoryApp.pdb
 D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\InventoryApp.genruntimeconfig.cache
 D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\ref\InventoryApp.dll
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\InventoryApp.sourcelink.json

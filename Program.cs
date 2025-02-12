@@ -127,7 +127,7 @@ class Inventory
     { // This method display the current inventory status. If there is no product in the inventory it will show "No inventory" and if there is product it will show the product details. Also included in this method is the option to expand the product details, remove product, and update product.
         while (true) // Loop to prevent exiting on invalid input
         {
-            //Console.Clear(); // Clear the console screen
+            Console.Clear(); // Clear the console screen
             if (products.Count == 0) // if there is no inventory then the program will show "No inventory" and will return to the main menu 
             {
                 Console.WriteLine("\n📦 Inventory");
@@ -173,7 +173,7 @@ class Inventory
     {
         while (true) // Loop to prevent exiting on invalid input
         {
-            //Console.Clear();
+            Console.Clear();
             products[index].DisplayInfo(); // Display product details
             Console.WriteLine("\n[1] Remove Product"); // Option to remove product
             Console.WriteLine("[2] Update Product"); // Option to update product
@@ -207,7 +207,7 @@ class Program // Main Program
 
         while (true) // Main Menu Loop
         {
-            //Console.Clear(); // Clear the console screen 
+            Console.Clear(); // Clear the console screen 
             Console.WriteLine("----------------------------------------------------------");
             Console.WriteLine("📋 Inventory Management System");
             Console.WriteLine("[1] Go to Inventory");
@@ -220,7 +220,7 @@ class Program // Main Program
             switch (choice) // I use switch statement to check the user input 
             {
                 case "1": // If user input is 1 Go to Inventory
-                    //Console.Clear(); // Clear the console screen
+                    Console.Clear(); // Clear the console screen
                     inventory.DisplayInventory();   // Call DisplayInventory method
                     break; // Break the switch statement
                 case "2": // If user input is 2 Add Product
