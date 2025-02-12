@@ -1,0 +1,14 @@
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\bin\Debug\net8.0\InventoryApp.exe
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\bin\Debug\net8.0\InventoryApp.deps.json
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\bin\Debug\net8.0\InventoryApp.runtimeconfig.json
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\bin\Debug\net8.0\InventoryApp.dll
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\bin\Debug\net8.0\InventoryApp.pdb
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\InventoryApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\InventoryApp.AssemblyInfoInputs.cache
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\InventoryApp.AssemblyInfo.cs
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\InventoryApp.csproj.CoreCompileInputs.cache
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\InventoryApp.dll
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\refint\InventoryApp.dll
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\InventoryApp.pdb
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\InventoryApp.genruntimeconfig.cache
+D:\BYU IDAHO\CSE310 AP\Inventory Management System\InventoryApp\obj\Debug\net8.0\ref\InventoryApp.dll
