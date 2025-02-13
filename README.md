@@ -77,7 +77,7 @@ Each product includes:
 
 The **Inventory Management System** provides an efficient way to track and manage products in stock. With essential operations like adding, updating, and removing products, it ensures seamless inventory management. Future improvements can include **database storage**, **advanced search capabilities**, and a **user-friendly GUI** for better usability. 🚀
 
-▶️ [Inventory Management System Demo](www.youtube.com)
+▶️ [Inventory Management System Demo](https://youtu.be/f4FcHBXLvHg)
 
 ## 🛠 Development Environment
 
