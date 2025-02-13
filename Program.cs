@@ -88,28 +88,51 @@ class Inventory
                 switch (choice) // I use switch statement to check the user input
                 {
                     case "1": // If user input is 1 update product name
-                        Console.Write("Enter updated product name: ");
-                        details.Name = Console.ReadLine(); // Read user input and update product name
+                        string updateName;
+                        do
+                        {
+                            Console.Write("Enter updated product name: ");
+                            updateName = Console.ReadLine()?.Trim(); // Read user input and update product name 
+                        } while (string.IsNullOrEmpty(updateName)); // Read user input and update product name if it is not empty
+                        details.Name = updateName; // Read user input and update product name
                         Console.WriteLine("✅ Your product name has been updated!");
                         break; // Break the switch statement
+
                     case "2": // If user input is 2 update brand name
-                        Console.Write("Enter updated brand name: ");
-                        details.Brand = Console.ReadLine(); // Read user input and update brand name
+                        string updateBrand;
+                        do
+                        {
+                            Console.Write("Enter updated brand name: ");
+                            updateBrand = Console.ReadLine()?.Trim(); // Read user input and update brand name
+                        } while (string.IsNullOrEmpty(updateBrand)); // Read user input and update brand name if it is not empty
+                        details.Brand = updateBrand; // Read user input and update brand name
                         Console.WriteLine("✅ Your brand name has been updated!");
                         break; // break the switch statement
+
                     case "3":
-                        Console.Write("Enter updated quantity: ");
-                        details.Quantity = int.Parse(Console.ReadLine()); // Read user input and update quantity
+                        int updateQuantity;
+                        do
+                        {
+                            Console.Write("Enter updated quantity: ");
+                        } while (!int.TryParse(Console.ReadLine(), out updateQuantity) || updateQuantity <= 0); // Read user input and update quantity if it is an integer and greater than 0
+                        details.Quantity = updateQuantity; // Read user input and update quantity
                         Console.WriteLine("✅ Your quantity has been updated!");
                         break; // Break the switch statement
+
                     case "4":
-                        Console.Write("Enter updated price: ");
-                        details.Price = decimal.Parse(Console.ReadLine()); // Read user input and update price
-                        Console.WriteLine("✅ Your price has been updated!");
+                        decimal updatePrice;
+                        do
+                        {
+                            Console.Write("Enter updated price: ");
+                        } while (!decimal.TryParse(Console.ReadLine(), out updatePrice) || updatePrice <= 0); // Read user input and update price if it is a decimal and greater than 0
+                        details.Price = updatePrice; // Read user input and update price
+                        Console.WriteLine("✅ Your price has been updated!"); // Display message that price has been updated
                         break; // break the switch statement
+
                     case "0":
                         product.Details = details; // Update struct inside the product
                         return;
+
                     default: // default case if user input is invalid also for handling user input error
                         Console.WriteLine("❌ Invalid choice. Try again.");
                         break;
@@ -224,14 +247,33 @@ class Program // Main Program
                     inventory.DisplayInventory();   // Call DisplayInventory method
                     break; // Break the switch statement
                 case "2": // If user input is 2 Add Product
-                    Console.Write("Enter product name: "); // Ask user to enter product name
-                    string name = Console.ReadLine();   // Read user input
-                    Console.Write("Enter brand: "); // Ask user to enter brand
-                    string brand = Console.ReadLine();  // Read user input
-                    Console.Write("Enter quantity: ");  // Ask user to enter quantity
-                    int quantity = int.Parse(Console.ReadLine());   // Read user input
-                    Console.Write("Enter price: ");     // Ask user to enter price
-                    decimal price = decimal.Parse(Console.ReadLine()); // Read user input
+
+                    string name, brand;
+                    int quantity;
+                    decimal price;
+
+                    do  // Loop to prevent empty product name
+                    {
+                        Console.Write("Enter product name: "); // Ask user to enter product name
+                        name = Console.ReadLine()?.Trim();   // Read user input and trim the white spaces
+                    } while (string.IsNullOrEmpty(name)); // Check if name is empty
+
+                    do
+                    {
+                        Console.Write("Enter brand: "); // Ask user to enter brand
+                        brand = Console.ReadLine()?.Trim();  // Read user input and trim the white spaces
+                    } while (string.IsNullOrEmpty(brand)); // Check if brand is empty
+
+                    do
+                    {
+                        Console.Write("Enter quantity: ");  // Ask user to enter quantity
+                    } while (!int.TryParse(Console.ReadLine(), out quantity) || quantity <= 0); // Read user input and check if it is an integer and greater than 0 
+
+                    do
+                    {
+                        Console.Write("Enter price: ");     // Ask user to enter price
+                    } while (!decimal.TryParse(Console.ReadLine(), out price) || price <= 0); // Read user input and check if it is a decimal and greater than 0
+
 
                     Product product = new ElectronicProduct(name, brand, quantity, price); // I created an instance of ElectronicProduct class
                     inventory.AddProduct(product); // Call AddProduct method to add the product 
